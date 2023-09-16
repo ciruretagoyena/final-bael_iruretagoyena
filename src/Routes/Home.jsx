@@ -1,6 +1,6 @@
 import React from "react";
 import DentistCard from "../Components/Card";
-import { useGlobalContext } from  "../Components/utils/global.context";
+import { useGlobalContext } from "../Components/utils/global.context";
 
 const Home = () => {
   const { state } = useGlobalContext();
