@@ -15,22 +15,22 @@ const initialState = {
 
 const handleDispatch = (state, {type, payload}) => {
   switch (type) {
-    case 'GET_DATA':
+      case 'GET_DATA':
       return { ...state, list: payload};
-    case 'GET_DENTIST':
+      case 'GET_DENTIST':
       return {...state, dentist: payload};
-    case 'ADD_FAVS':
+      case 'ADD_FAVS':
       return {...state, favs: [...state.favs, payload]};
-    case 'DELETE_FAV':
-        return {...state, favs: payload}
-    case "DARK":
+      case 'DELETE_FAV':
+      return {...state, favs: payload}
+      case "DARK":
         localStorage.setItem("theme", JSON.stringify("dark"))
-        return {...state, theme: "dark"}
-    case "LIGHT":
+      return {...state, theme: "dark"}
+      case "LIGHT":
         localStorage.removeItem("theme")
-        return {...state, theme: null
+      return {...state, theme: null
         }
-      default: 
+    default: 
       return state; 
   }
 }

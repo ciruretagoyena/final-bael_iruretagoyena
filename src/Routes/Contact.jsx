@@ -9,8 +9,8 @@ const Contact = ({ theme }) => {
 
   return (
     <div className={containerClass}>
-      <h2 className={titleClass}>¿Quieres saber más?</h2>
-      <p className={textClass}>Envíanos tus preguntas y te contactaremos</p>
+      <h2 className={titleClass}>¿Queres saber más?</h2>
+      <p className={textClass}>Envianos tus preguntas y te contactaremos</p>
       <Form />
     </div>
   );
